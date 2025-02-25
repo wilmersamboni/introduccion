@@ -1,0 +1,22 @@
+/* .elboton { 
+    box-shadow: 3px 4px 0px 0px #1564;
+    background-color: transparent;
+    border-radius: 5px;
+    border:1px solid #337bca;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration:none;
+    text-shadow: 0px 8px 0px #5228;
+}
+.elboton:hover{
+    background-color: transparent;
+}
+.elboton:active{
+    position: relative;
+    top: 1px;
+} */

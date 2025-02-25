@@ -1,0 +1,129 @@
+
+        
+        .spec-table td {
+            height:25px;
+            width:20% ;
+            text-align: center;
+            border: 1px solid rgb(197, 195, 195);
+            color: dimgrey;
+        }
+        
+        
+        .spec-table {
+            width: 75%;
+            height: 100px;
+            border-collapse: collapse;
+            border: 1px solid rgb(11, 11, 11);
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spec-table th {
+            background-color: rgb(255, 255, 255);
+            color: dimgrey;
+        
+            text-align: center;
+            border: 1px solid rgb(199, 196, 196);
+        }
+        div {
+            text-align:left;
+            margin-top: 20px;
+            margin-bottom: 100px;
+        }
+        table{
+            border-collapse: collapse;
+            border: 1px solid rgb(38, 36, 36);
+            width: 85%;
+            margin-bottom: 100px;
+        }
+        th {
+            border: 1px solid rgb(241, 240, 240);
+            background-color: rgb(87, 87, 83);
+            color: rgb(249, 253, 249);
+            
+        }
+        td {
+            border: 1px solid rgb(153, 151, 151);
+            text-align: center;
+        }
+        td{
+            height:15px ;
+        }
+        .h1{
+            text-align:left;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: rgb(37, 119, 167);
+
+        
+        
+
+        }
+        .footer th {
+            background-color: white;
+            text-align: left;color: rgb(62, 62, 62);
+            border:0PX ;
+            padding:20px ;        
+        
+        }
+        .footer {
+            width: 80%;
+            margin-left:10% ;
+            border: 0PX;
+            
+           
+        }.footer td{
+            background-color: white;
+            text-align:left;color: blue;
+            border:0PX ;
+            padding:1px ;
+
+            
+        }
+        .foter{
+            background-color: rgb(59, 173, 59);
+            height: 325px;
+        }
+        h2,h3 {
+            color: rgb(69, 72, 134);
+        }
+        .footer2 {
+            background-color: rgb(58, 58, 181);
+            
+        }
+        .foter2{
+            border: 100px;
+            width: 50%;
+            margin-top: 50px;
+          
+        }
+
+     
+ button  { 
+     box-shadow: 3px 4px 0px 0px #1564ad;
+     background-color: #79bbff;
+     border-radius: 5px;
+     border:1px solid #337bca;
+     display: inline-block;
+     cursor: pointer;
+     color: #ffffff;
+     font-family: Arial;
+     font-size: 17px;
+     font-weight: bold;
+     padding: 12px 44px;
+     text-decoration:none;
+     text-shadow: 0px 1px 0px #528ecc;
+   
+ }
+ .elboton:hover{
+     background-color: #378de5;
+ }
+ .elboton:active{
+     position: relative;
+     top: 1px;
+ }
+ button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

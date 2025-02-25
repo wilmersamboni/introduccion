@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REQUERIMIENTOS</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header>
+        <style>
+        .spec-table td {
+            height:25px;
+            width:20% ;
+            text-align: center;
+            border: 1px solid black;
+        }
+        
+        
+        .spec-table {
+            width: 85%;
+            height: 100px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spec-table th {
+            background-color: white;
+        
+            text-align: center;
+            border: 1px solid black;
+        }
+</style>
+        <table class="spec-table">
+            <tr>
+                <td rowspan="4" class="logo">
+                    <img style="width: 110px;"src="images.png" alt="Logo SENA">
+                    
+                </td>
+                <th>Ficha:</th>
+                
+                <th colspan="2">Proyecto:</th>
+               
+            </tr>
+            <tr>
+                <td>3063290</td>
+                <td colspan="2">EPSAS</td>
+            </tr>
+            <tr>
+                <th>Fecha:</th>
+                <th>version:</th>
+                <th>codigo:</th>
+            </tr>
+            <tr>
+                <td>24/12/02</td>
+                <td>2.0</td>
+                <td>0325</td>
+            </tr>
+        </table>
+     </header>
+    <p><b>3. Especificacion de requisitos.</b></p>
+    <p></p><b>3.1. Requisitos funcionales.</b></p>
+    <style>
+        td {
+            width: 50%;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>FUNCIONALIDAD.</th>
+            <th>TIPO(esencial, ideal, opcional).</th>
+        </tr>
+        <tr>
+            <td>RF01-Registro de usuario. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF02-Permisos de menu. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF03-Recuperar contraseña. </td>
+            <td>Ideal.</td>
+        </tr>
+        <tr>
+            <td>RF04-Iniciar sesion. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF05-Pagina principal. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF06-Busquda o filtros. </td>
+            <td>Ideal.</td>
+        </tr>
+        <tr>
+            <td>RF07-Modulo de horarios. </td>
+            <td>Ideal.</td>
+        </tr>
+        <tr>
+            <td>RF08-Modulo de asistencias. </td>
+            <td>Ideal.</td>
+        </tr>
+        <tr>
+            <td>RF09-Carpeta de titulado. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF10-Carpeta por ficha. </td>
+            <td>Esencial.</td>
+        </tr>
+        <tr>
+            <td>RF11-Tabla de seguimiento. </td>
+            <td>Esencial.</td>
+        </tr>
+    </table>
+    <p><b>3.1.1Clasificacionde requisitos funcionales.</b></p>
+    <table>
+        <tr>
+            <th>ID  del requerimiento.</th>
+            <td>RF01.</td>
+            
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Registro de usuario.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá validar los datos ingresados (nombre completo documento de identidad, contraseña complejidad de la contraseña y unicidad del nombre) si estos datos son válidos, el sistema permitirá guardar el usuario en la base de datos, el sistema también enviara un correo de confirmación o activación, si hay errores en la validación mostrara un mensaje claro al usuario como “el correo ya están en uso” o las contraseñas no coinciden y permitirá corregir los datos ingresados con anterioridad.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>
+        <hr>
+</table>
+<table>
+    <tr>
+        <th>ID  del requerimiento.</th>
+        <td>RF02.</td>
+        
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Permisos de menu.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema le permitirá al administrador poder dar permisos de acuerdo al rol del usuario que se va a registrar.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+        <tr>
+            <th>ID  del requerimiento.</th>
+            <td>RF03.</td>
+            
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Inicio de sesion.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá a los usuarios poder iniciar sesión ingresando un correo y una contraseña previamente registrados, dándole acceso a la página principal, estos campos deben obligatoriamente diligenciados.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>
+        <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF04.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Recuperar contraseña.</td>
+    </tr>
+    <tr>
+        <th>Descripcion</th>
+        <td>El sistema permitirá poder restaurar la contraseña al usuario por medio de un correo electrónico previamente registrado al cual se le enviará un correo con código de validación, este tendrá una duración valida de 6:59 segundos para ser ingresado.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Media.</td>
+    </tr>
+      <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF05.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>pagina principal.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>Sistema permitirá los usuarios visualizar el logo de la aplicación en la parte superior izquierda, en la parte superior derecha se visualizará el perfil de usuario, en la parte inferior derecha de la interfaz se podrá visualizar el icono de notificaciones.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF06.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Barra de busqueda o filtro.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El módulo de búsqueda de usuarios por filtros permite a los usuarios con permisos acceder a una funcionalidad intuitiva para localizar rápidamente registros específicos. A través del submódulo "Usuarios", el usuario puede seleccionar la opción "Buscar Usuario" y utilizar filtros como número de identificación, nombre, rol (Instructor, Aprendiz, Administrador) o una combinación de ellos. Una vez aplicados los filtros y presionado el botón "Buscar", el sistema muestra los datos encontrados directamente desde la base de datos, proporcionando resultados precisos y organizados para facilitar su consulta.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF07.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Modulo de horarios.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema le permitirá al usuario poder ingresar al módulo horarios donde podrá visualizar su horario laboral de acuerdo al rol asignado.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF08.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Creacion de horarios.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitira al usuario poder crear y modificar sus horarios.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF09.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Modulo de asistencias.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitirá a los instructores poder marcar las asistencias de los aprendices que asisten a formación del día correspondiente.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF10.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Creacion de asistencias.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema les permitirá a los instructores y al administrador poder crear registros de asistencias.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF11.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Modulo de elementos y carpetas.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>En la página principal se podrá visualizar los programas de formación clasificados por áreas donde se pondrá acceder a ellos por medios de clics, dentro de estas se encontrarán los titulados y ficha de caracterización de acuerdo al área que pertenece.</td> 
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF12.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Modulos de carpetas  de titulados.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitirá acceder a las carpetas de los titulados donde se podrá encontrar una tabla de datos con información de la etapa lectiva y productiva de los aprendices al igual que información personal, verificación, evaluación y corrección de bitácoras. </td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF13.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Modulo de carpetas por fichas.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitirá acceder a las carpetas de los titulados donde se podrá encontrar una tabla de datos con información de la etapa lectiva y productiva de los aprendices al igual que información personal, verificación, evaluación y corrección de bitácoras. </td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF14.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Tabla de seguimiento.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitirá visualizar una tabla con la información de los aprendices que se encuentran en etapa productiva y los resultados de seguimiento.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    <br>
+</table>
+<br>
+<b>3.2 Requisitos tecnicos.</b>
+<br>
+<table>
+    <tr>
+        <th>Funcionalidad.</th>
+        <th>Tipo.</th>
+    </tr>
+    <tr>
+        <td>RT01-Privilegios de administrador.</td>
+        <td>Esencial.</td>
+    </tr>
+    <tr>
+        <td>RT02-Operativo: Windows 8/801/10/11  - Linux.</td>
+        <td>Esencial.</td>
+    </tr>
+    <tr>
+        <td>RT03 - Acceso a Internet: Google chorme, opera, safari, Microsoft Edge.</td>
+        <td>Esencial.</td>
+    </tr>
+    <tr>
+        <td>RT04-Almacenamiento de información.</td>
+        <td>Esencial.</td>
+    </tr>
+    <tr>
+        <td>RT05-Base datos: PostgreSQL.</td>
+        <td>Esencial.</td>
+    </tr>
+</table>
+<br>
+<b>3.2.1 Clasificacion de requisitos tecnicos.</b>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RF01.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+        <td>Privilegios de administrador.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El privilegió de administrador permitirá tener un acceso exclusivo a todo el sistema, permitiendo la gestión, configuración, monitoreo y seguridad del mismo. </td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+    
+</table>
+<br>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RT02.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+
+        <td>Sistema operativo: Windows 8/8.1/10/11  - Linux.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema ejecutara en el sistema operativo Windows 8/8.1/10/11 -Linux.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RT03.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+
+        <td>Acceso a Internet: Google chorme, opera, safari, Microsoft Edge.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>Se podrá acceder al sistema por navegadores como Google chorme, opera, safari, Microsoft Edge, por medio de una dirección IP0 o por una URL. </td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RT04.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento</th>
+
+        <td>Almacenamiento de informacion.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>El sistema permitirá almacenar la información a través de una red de servidores internos.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+</table>
+<br>
+<table>
+    <tr>
+        <th>ID del requerimiento.</th>
+        <td>RT05.</td>
+    </tr>
+    <tr>
+        <th>Nombre del requerimiento.</th>
+
+        <td>Base datos: PostgreSQL.</td>
+    </tr>
+    <tr>
+        <th>Descripcion.</th>
+        <td>La base de datos se almacenará en el sistema PostgreSQL que permite un almacenamiento confiable y versátil.</td>
+    </tr>
+    <tr>
+        <th>Prioridad.</th>
+        <td>Alta.</td>
+    </tr>
+</table>
+<br>
+<b>3.3 Requisitos no funcionales.</b>
+<table>
+    <tr>
+        <th>Codigo-nombre</th>
+        <th>Descripcion</th>
+    </tr>
+</table>
+<table>
+    <td> <b>1. Usabilidad.</b>  
+        El software será fácil de entender y utilizar por los usuarios finales con una interfaz accesible y lógica.
+    </td>
+</table>
+<style>
+    td{ 
+        width: 50%;
+    }
+</style>
+<table>
+    <tr>
+        <td>RNF01- Aprendizaje del sistema.</td>
+        <td>El tiempo de aprendizaje del sistema por un usuario deberá ser menor a 3 horas. </td>
+    </tr>
+    <tr>
+        <td>RNF02-Manuales de usuario. </td>
+        <td>El sistema contara con un manual de usuario que proporcionara instrucciones detalladas y claras de cómo comprender y utilizar el sistema. </td>
+    </tr>
+   
+</table>
+
+<table>
+    <td> <b>2. Confiabilidad.</b>  
+        El sistema permite una disponibilidad continuada que asegura que este libre para los usuarios en todo momento, minimiza la interrupción, es un sistema confiable ante los fallos, protegiendo los datos y servicios.
+    </td>
+</table>
+<style>
+    td{ 
+        width: 50%;
+    }
+</style>
+<table>
+    <tr>
+        <td>RNF03- Disponibilidad.</td>
+        <td>El sistema contara con altos tipos de disponibilidad al usuario.  </td>
+    </tr>
+    <tr>
+        <td>RNF04-Resilencia. </td>
+        <td>El sistema contara con la capacidad de recuperarse rápidamente de errores o fallos minimizando el impacto. </td>
+    </tr>
+    <tr>
+        <td>RNF05-Precision. </td>
+        <td>El software cumplirá con un desarrollo perfecto de las funciones, sin errores en los resultados. </td>
+    </tr>
+    <tr>
+        <td>RNF06-Manejabilidad de fallos. </td>
+        <td> El sistema permite a una detección, manejo y registro eficiente de errores para evitar interrupciones graves.</td>
+    </tr>
+    <tr>
+        <td>RNF07-Cumplimiento de requisitos </td>
+        <td>El sistema se desarrollará sobre un funcionamiento alineado a los estándares y especificaciones definidos durante el desarrollo. </td>
+    </tr>
+</table>
+<table>
+        <td> <b>3.Seguridad.</b>  
+            El sistema permitirá la garantizará el cumplimiento del régimen general de protección de datos personales, cuando el sistema solicite información personal al usuario final, se establecerá un mecanismo para obtener la autorización.
+        </td>
+</table>
+    <style>
+        td{ 
+            width: 50%;
+        }
+    </style>
+        <table>
+            <tr>
+                <td>RNF08- Autenticacion</td>
+                <td>El sistema garantizara que los usuarios sean quienes dicen ser mediante contraseñas, de mínimo 8 caracteres, símbolos, números, mayúsculas y minúsculas.  </td>
+            </tr>
+            <tr>
+                <td>RNF09-Autorizacion </td>
+                <td>Se establecerán políticas dentro del sistema que restringa el acceso a datos y recursos únicamente a usuarios autorizados.</td>
+            </tr>
+            <tr>
+                <td>RNF10-Confidencialidad </td>
+                <td> El sistema protegerá los datos sensibles mediante logaritmos encriptados, asegurando que no puedan ser leídos en caso de intercepción. </td>
+            </tr>  
+            <tr>
+                <td>RNF11-Disponibilidad </td>
+                <td> Se implementarán sistemas redundantes como servidores de respaldo o base de datos para garantizar las operaciones.  </td>
+            </tr>  
+    </table>
+    <table>
+        <td> <b>4.Eficiencia.</b>  
+            el sistema tendrá un tiempo de respuesta máximo de dos segundó bajo cargas normales, será capaz de manejar incrementos de carga como usuarios, datos y procesos sin degradar significativamente el desempeño, permitirá la ejecución simultanea de 1.000 usuarios concurrentes sin afectar el tiempo de respuesta. 
+        </td>
+    </table>
+    <style>
+        td{ 
+            width: 50%;
+        }
+    </style>
+<table>
+    <tr>
+        <td>RNF12- Uso de memoria.</td>
+        <td>El software utilizara una memoria optima, evitando la sobre carga y el uso excesivo de RAM, el sistema se desarrollará sobre un uso eficiente sin sobre cargar el procesador, ejecutando tareas que minimicen los ciclos en CPU.</td>
+    </tr>
+    <tr>
+        <td>RNF13- Tiempo de ejecución.</td>
+        <td>El sistema responderá con rapidez a las acciones del usuario o solicitudes del sistema, optimizando los logaritmos de forma eficiente que permitan resolver problemas con menos pasos. </td>
+    </tr>
+    <tr>
+        <td>RNF14- Escabilidad.</td>
+        <td>El sistema será capaz de manejar un aumento de carga de trabajo, garantizando una que el sistema siga siendo eficiente a medida que crece en tamaño o complejidad. </td>
+    </tr>
+    <tr>
+        <td>RNF15-0ptimizacion de red.</td>
+        <td>El sistema optimizara el uso de la red, minimizando las transferencias innecesarias de datos utilizando técnicas como la comprensión y el cache para mejorar la velocidad y el acceso al sistema.</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><b>5.Portabilidad.</b>
+            EL sistema permitirá al usuario acceder de diferentes plataformas como Windows, Linux, móviles fácilmente.</td>
+</table>
+</tr>
+<style>
+    td{
+        width: 50%;
+    }
+</style>
+<table>
+    <tr>
+        <td>RNF16-Compatibilidad de plataformas.</td>
+        <td>El sistema será diseñado con interfaces y dependencias mínimas que sean compatibles y capaza de ejecutarse en múltiples plataformas.</td>
+    </tr>
+    <tr>
+        <td>RNF17-Adaptabilidad.</td>
+        <td>El software se adaptará fácilmente a nuevas tecnologías y diferentes arquitecturas de hardware sin necesidad de modificaciones significativas en el código.</td>
+    </tr>
+    <tr>
+        <td>RNF18-Independencia De La Plataforma.</td>
+        <td>El software se diseñará lo más independiente posible de la plataforma, que facilite la transferencia a nuevas plataformas. </td>
+    </tr>
+    <tr>
+        <td>RNF19-Uso De Estándares Abiertos.</td>
+        <td>El sistema contará con tecnologías ampliamente aceptadas para mejorar la portabilidad en diversas plataformas. </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><b>6.Mantenibilidad.</b>
+            El sistema permitirá realizar cambios correctamente a lo largo del tiempo a través de la claridad del código, modularidad, la documentación adecuada y la automatización de pruebas, esto no solo permitirá la corrección de errores, sino que permite la actualización a nuevas tecnologías y cambios de los requisitos de usuario sin afectar las funcionalidades existentes. </td>
+        
+    </tr>
+</table>
+<style>
+    td {
+        width: 50%;
+    }
+</style>
+<table>
+    <tr>
+        <td>RNF20-Facilidad De Modificación.</td>
+        <td>El software se diseñará de forma que sea fácil agregar nuevas funcionalidades y corregir errores, el código será comprensible, modular y bien documentado de modo que se pueda corregir sin introducir nuevos problemas.</td>
+    </tr>
+    <tr>
+        <td>RNF21-Reutilización.</td>
+        <td>El software se construirá sobre una base reutilizable que le permitirá futuras modificaciones sin rehacer grandes partes del código.</td>
+    </tr>
+    <tr>
+        <td>RNF22-Modularidad.</td>
+        <td>El sistema se dividirá en módulos independientes que se puedan modificar y actualizar sin afectar el resto del sistema. </td>
+    </tr>
+    <tr>
+        <td>RNF23-Documentación.</td>
+        <td>La documentación será clara y detallada que permita a los desarrolladores la comprensión rápidamente de cómo funciona el sistema, de cómo está estructurado el código y como se deben realizar las modificaciones sin causar cambios inesperados.</td>
+    </tr>
+    <tr>
+        <td>RNF24-Pruebas Automáticas.</td>
+        <td>El sistema contara con pruebas tanto unitarios como de integración, que aseguran que al realizar modificaciones o adiciones el sistema seguirá funcionando, lo que permitirá detectar errores y retrocesos rápidamente durante la fase de mantenimiento.</td>
+    </tr>
+    <tr>
+        <td>RNF25-Seguimiento de errores.</td>
+        <td>El software contara con un BUGS que le permitirá identificar errores para que se puedan, priorizar y corregir de forma rápida y efectiva.</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td><b>7.Soportabilidad y operatividad. </b>
+            El software podrá mantenerse y repararse con facilidad, garantizando que estén en optimas condiciones para operar, el sistema tendrá la capacidad de cumplir con sus objetivos funcionales de manera eficiente El software podrá mantenerse y repararse con facilidad, garantizando que estén en optimas condiciones para operar, el sistema tendrá la capacidad de cumplir con sus objetivos funcionales de manera eficiente. </td>
+    </tr>
+</table>
+<style>
+    td {
+        width: 50%;
+    }
+</style>
+<table>
+    <tr>
+        <td>RNF26-Documentación Técnica Completa.</td>
+        <td>El software contara con una guía detallada y completa sobre su configuración instalación y resolución de problemas.</td>
+    </tr>
+    <tr>
+        <td>RNF27-Facilidad De Actualización. </td>
+        <td>El sistema permitirá actualizaciones sin interrupciones significativas.</td>
+    </tr>
+    <tr>
+        <td>RNF28- Compatibilidad Con La Estructura.</td>
+        <td>El software</td>
+    </tr>
+    <tr>
+        <td>RNF29-Usabilidad.</td>
+        <td>El software será fácil de entender y utilizar por los usuarios finales. </td>
+    </tr>
+    <tr>
+        <td>RNF30-Disponibilidad.</td>
+        <td>El sistema estará disponible para los usuarios en todo momento.</td>
+    </tr>
+    <tr>
+        <td>RNF31-Confiabilidad.</td>
+        <td>El software funcionara de forma constante y predecible, sin fallos. </td>
+    </tr>
+    <tr>
+        <td>RNF32-Escalabilidad.</td>
+        <td>El sistema permitirá incrementos de carga.</td>
+    </tr>
+    <tr>
+        <td>RNF33-Seguridad.</td>
+        <td>La operatividad del sistema incluye proteger datos y transacciones realizadas en el sistema contra accesos no autorizados. </td>
+    </tr>
+</table>
+<br>
+<b>4. Aspectos legales (normas o leyes)</b>
+<p>En el desarrollo del software consideramos diversas implicaciones legales para proteger los derechos de los desarrolladores, usuarios y terceros, así como para garantizar el cumplimiento de las normativas vigentes.</p>
+<p></p><b>Propiedad intelectual: </b>la propiedad intelectual es un conjunto de derechos que protegen las creaciones originales de la mente humana. </p>
+<ul>
+    <li>Derechos de autor; es la propiedad intelectual que protege las diferentes obras y creaciones que nos ayudaran a tener derechos morales y patrimoniales</li>
+    <li>Patentes; las patentes nos darán el derecho otorgado por el estado a proteger nuestra invención impidiendo que terceros exploten comercialmente.  </li>
+</ul>
+<p><b>Licencias de software: </b>estos documentos legales que establecen normas para el uso y su distribución nos garantizan los derechos de propiedad del software permitiendo que el usuario final pueda utilizarlo. </p>
+<ul>
+    <li>Licencia de propietario; la licencia de propietario o de código cerrado nos proporciona a los clientes un código operativo que no se puede modificar ni compartir libremente. </li>
+    <li>Licencia de código abierto.</li>
+</ul>
+<b>Dominio publico</b>
+<p>Se trata del tipo de licencia de software más permisivo. Cuando el software es de dominio público, cualquiera puede modificarlo y utilizarlo sin ninguna restricción. Precisamente este factor hace de este tipo de licencia una más proclive a contar con virus u otras amenazas que puedan afectar al rendimiento de tu ordenador. Por eso, es importante asegurarse de que se trata de una licencia segura antes de añadirlo a cualquier base de código. Otra advertencia: si el código no tiene una licencia explícita no significa que sea de dominio público. </p>
+<b>Permisivas</b>
+<p>Las licencias permisivas cuentan con una serie de requisitos mínimos sobre cómo se puede modificar o redistribuir. Este tipo de licencia es, probablemente, la más popular entre el software libre y de código abierto. En la actualidad, la principal licencia permisiva de uso general es Creative Commons Atribución.</p>
+<p><b>Proteccion de datos personales: </b>El software se diseñará para que todo responsable pueda gestionar de manera autónoma y dentro de los deberes establecidos dentro del marco normativo de la ley 1581 de protección de datos. </p>
+<p><b>Contratos y acuerdos: </b>En estos acuerdos podremos definir los términos y condiciones para los proveedores, desarrolladores y usuarios finales del software donde se pueden incluir aspectos como la propiedad licencias, distribuciones, mantenimiento, soporte y pago. </p>
+<p><b>Seguridad de software: </b>este conjunto de medidas y mecanismos nos ayudaran a que resista ante ataques y permanezca funcional. </p>
+<ul>
+    <li>Cumplimiento de estándares; este aspecto es fundamental para garantizar la privacidad de usuarios, para ellos se utilizará técnicas de cifrado y métodos de protección de datos, resistencia a ataques informáticos, buenas prácticas de codificación, actualizaciones y auditorias de seguridad periódicas.</li>
+    <li>Responsabilidad ante fallos; la responsabilidad ante fallos puede recaer en los desarrolladores, los proveedores de software o los usuarios, para gestionar estos errores se utilizarán herramientas especializadas como detectar un error antes de que el producto entre al mercado.</li>
+</ul>
+<p><b>Responsabilidad legal: </b>: estas obligaciones legales están relacionadas a la conformidad y buen funcionamiento del producto, si el software presenta fallos, defectos o no cumple con las características prometidas, el proveedor debe asistir al usuario y poner fin a las incidencias.</p>
+<p><b>Legalización sobre uso de tecnologías: </b>: el desarrollo del software estará regulado por la ley 603 de 200 conocida como la ley de las licencias de software. </p>
+<p><b>Derechos del consumidor: </b>La ley de derechos de autor protege el código del software evitando que se copie o se use de forma no autorizada, este derecho de autor protege desde que se crea y se fija un medio tangible. </p>
+<b>5.Restricciones del software</b>
+<p>Lenguaje de programación puede estar restringido por tipo de terminal o sesión.</p>
+<p>Restricciones de tipo legal. </p>
+<p>Restricción al integrarse con otros sistemas. </p>
+<p>Ciclos de vida del producto. </p>
+<p>Alcances costos  tiempo. </p>
+<b>Anexos</b>
+
+
+
+   
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+.spec-table td {
+    height:25px;
+    width:20% ;
+    text-align: center;
+    border: 1px solid rgb(189, 186, 186);
+}
+
+
+.spec-table {
+    width: 85%;
+    height: 100px;
+    border-collapse: collapse;
+    border: 1px solid rgb(169, 163, 163);
+    margin-left: auto;
+    margin-right: auto;
+}
+.spec-table th {
+    background-color: white;
+
+    text-align: center;
+    border: 1px solid rgb(160, 156, 156);
+}
+
+header {
+    text-align: center;
+    
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    
+}
+th {
+    background-color: #c1bdbd;
+    width: 25%;
+}
+td, th {
+    text-align: left;
+    padding: 3px;
+}
+table, th, td {
+    border: 2px solid rgb(78, 75, 75);
+}
+.footer th {
+    background-color: white;
+    text-align: left;
+    border:0PX ;
+    padding:20px ; 
+    width: auto;       
+
+}
+.footer {
+    width: 80%;
+    margin-left:10% ;
+    border: 0PX;
+    margin-top: 25px;
+    
+    
+   
+}.footer td{
+    background-color: white;
+    text-align:left;
+    border:0PX ;
+    padding:1px ;
+
+    
+}
+.foter{
+    background-color: green;
+    height: 345px;
+}
+.parrafo{
+    margin-bottom: 15px;
+    color: dimgray;
+}
+h2,h3 {
+    color: rgb(100, 134, 176);
+}
+
+
+
+
+div , p , h2{
+    margin: 20px 20px  20px 20px;
+}
+
+div,.parrafos2{
+    color: rgb(93, 92, 92);
+}
+
+.videoportada{
+    margin:1px 1px 80px 50px;
+}
+
+button  { 
+    box-shadow: 3px 4px 0px 0px #1564ad;
+    background-color: #79bbff;
+    border-radius: 5px;
+    border:1px solid #337bca;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration:none;
+    text-shadow: 0px 1px 0px #528ecc;
+  
+}
+
+.elboton:hover{
+    background-color: #378de5;
+}
+.elboton:active{
+    position: relative;
+    top: 1px;
+}
+button{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

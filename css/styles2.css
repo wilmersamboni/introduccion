@@ -1,0 +1,60 @@
+.spec-table td {
+    height:35%px;
+    width:20% ;
+    text-align: center;
+    border: 1px solid rgb(11, 11, 11);
+}
+
+
+.spec-table {
+    width: 85%;
+    height: 100%px;
+    border-collapse: collapse;
+    border: 1px solid rgb(7, 7, 7);
+    margin-left: auto;
+    margin-right: auto;
+}
+.spec-table th {
+    background-color: rgb(15, 15, 15);
+
+    text-align:center;
+    border: 1px solid black;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+td{
+    width: 50%;
+    border: 2px solid black;
+}
+footer th {
+    background-color: white;
+    text-align: left;
+    border:0PX ;
+    padding:20px ; 
+    width: auto;       
+
+}
+.footer {
+    width: 80%;
+    margin-left:10% ;
+    border: 0PX;
+    margin-top: 25px;
+    
+    
+   
+}.footer td{
+    background-color: white;
+    text-align:left;
+    border:0PX ;
+    padding:1px ;
+
+    
+}
+.foter{
+    background-color: green;
+    height: 345px;
+}
+
