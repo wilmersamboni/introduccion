@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caracteristicas</title>
+    <link rel="stylesheet" href="css/cabeza.css">
+</head>
+<body>
+    <table class="spec-table">
+        <tr>
+            <td rowspan="4" class="logo">
+                <img style="width: 110px;"src="/static/images.png" alt="Logo SENA">
+                
+            </td>
+            <th>Ficha:</th>
+            
+            <th colspan="2">Proyecto:</th>
+           
+        </tr>
+        <tr>
+            <td>3063290</td>
+            <td colspan="2">EPSAS</td>
+        </tr>
+        <tr>
+            <th>Fecha:</th>
+            <th>version:</th>
+            <th>codigo:</th>
+        </tr>
+        <tr>
+            <td>24/12/02</td>
+            <td>2.0</td>
+            <td>0325</td>
+        </tr>
+    
+</table>
+
+    <div class="img">
+        <img src="/static/pequeña.png"alt="portada" width="" height="">
+
+    </div>
+
+         <h1 class="h1"> 2.2 Caracteristicas Del Producto</h1>
+
+        <p>
+            El sistema será desarrollado en arquitectura de RESTFULL, será una herramienta web, que permitirá realizar procesos de gestión de usuarios, entre funcionalidades a nivel general, esto se realizará mediante ítems
+        </p>
+        <h2 class="h2">2.2.1 Funciones del producto</h2>
+        <h3  class="h2">2.2.1.1 Registro de usuarios.</h3>
+        <p>
+            El sistema permitirá validar los datos ingresados
+            <ul class="parrafos">
+            <li>Nombre completo</li> 
+            <li>Correo electrónico </li>
+            <li>Documento de identidad </li>
+            <li>Contraseña</li> 
+            <li>Confirmación de contraseña </li>
+            <li>Número de teléfono</li> 
+            <li>Número de teléfono de respaldo </li>
+            <li>Dirección </li>
+            <li>Tipo de usuario </li>
+            <li>Región</li> 
+            <li>Sede </li>
+            <li>Área </li>
+            <li>Titulado</li> 
+            <li>Ficha</li> 
+            <li>Botón <b>“Registrar"</li>
+            </ul>
+         </p>
+
+        <div class="img ">
+        <img src="/static/registro1.png"alt="imagen" width="70%">
+        </div>
+
+        <div class="img">
+         <img src="/static/registro2.png"alt="imagen" width="70%">
+        </div>
+
+
+            <p>
+                Si estos datos son válidos, el sistema permitirá guardar el usuario en la base de datos, el sistema también enviara un correo de confirmación o activación, si hay errores en la validación mostrara un mensaje claro al usuario como “el correo ya está en uso” o las contraseñas no coinciden y permitirá corregir los datos ingresados con anterioridad.
+                El correo debe tener dominio Gmail (@gmail.com) de lo contrario el registro será invalido y se mostrara un mensaje automáticamente en la parte superior que indicara que el dominio es incorrecto y tendrá un botón en forma de x al costado derecho del recuadro del mensaje que cerrara se cerrara y permitirá corregir el correo  
+                contraseña: deberá contar con un mínimo de 6 caracteres, donde incluya mínimo un carácter en mayúscula y un carácter numérico, donde la visualización de la contraseña estará encriptada con asteriscos (*) y se permitirá ver textualmente 
+                por medio de un botón con forma de ojo que estará ubicado al costado derecho del apartado de contraseña 
+                se pedirán datos personales para el registro de usuario (nombre completo, documento de identidad, número de teléfono, dirección).
+            </p>
+                
+                <h3 class="h2">2.2.1.2 Permisos de Menú.</h3>
+                <p>
+                    Es sistema tendrá la configuración que determinara que opciones, funcionalidades o secciones del sistema pueden ser accedidas por los diferentes tipos de usuarios. Estos permisos son esenciales para garantizar que los usuarios solo interactúan con las funcionalidades que le correspondan según su rol o nivel de autorización dentro del sistema.
+                </p>
+
+                <div class="img">
+                <img src="/static/permiso.png"alt="imagen" width="70%">
+                </div>
+
+                <h3 class="h2">2.2.1.3 Recuperación de contraseña.</h3>
+
+                <p>
+                    •El sistema permitirá validar que el correo ingresado este registrado en el sistema, si este es válido generara un enlace único con un código de verificación que se enviara al correo para el restablecimiento de la contraseña.
+                </p>
+                <div class="img">
+                    <img src="/static/incorrecta.png"alt="imagen" width="70%">
+                </div> 
+
+                 
+                <p>   
+                    •El código tendrá una duración de 6.59 minutos, que se podrá visualizar en forma de temporizador en la parte inferior del recuadro “código de verificación”. 
+                </p>
+
+                <div class="img">
+                    <img src="/static/codigovf.png"alt="imagen" width="70%">
+                </div>
+
+                <p>
+
+                    •En caso de que el usuario no ingrese el código correctamente se dará un mensaje de “código no valido”, en este caso se dará la opción de reenviar código que estará en la parte de abajo del campo de “ingresar código de verificación”. 
+                </p>
+                
+                <p>
+                    •Si las contraseñas no llegan a coincidir al momento de restablecerlas se dará un mensaje de “las contraseñas no coinciden”
+                </p>
+
+                <p>
+                    •Si el correo no está registrado mostrara un mensaje indicando que “la dirección del correo no está asociado a ninguna cuenta”. 
+                </p>
+                
+                <p>
+                    •Una vez el usuario accede al enlace el sistema lo reenviará a una nueva ventana para ingresar su nueva contraseña. 
+                </p>
+
+                <div class="img">
+                    <img src="/static/restable.png"alt="imagen" width="70%">
+                </div>
+
+                <p>
+                    •El sistema validara la nueva contraseña y actualizara la cuenta del usuario, mostrando un mensaje en la parte superior “restablecimiento de contraseña exitoso”.
+                </p>
+
+                <div class="img">
+                    <img src="/static/exitoso.png"alt="imagen" width="70%">
+                </div> 
+                
+
+                    <h3 class="h2">2.2.1.4 Página principal</h3>
+
+                    <p>
+                        El sistema permitirá la visualización del logo de la aplicación al costado izquierdo de la interfaz, al lado derecho el icono de perfil de usuario y en la parte inferior derecha del icono de perfil se pondrá el icono de notificaciones en el perfil del usuario el sistema permitirá que una vez se haga clic en este se despliegue un recuadro con el nombre de usuario, correo electrónico, documento de identidad y opción de cerrar sesión.
+                    </p>
+                    <p>
+                        En la parte superior se visualizará la herramienta de inicio, formatos, reglamento del aprendiz, barra de búsqueda rápida, al hacer clic en inicio el sistema redirigirá al usuario a la página principal al hacer clic en formatos, el sistema abrirá un interfaz con los formatos de ámbito educativo, administrativo, técnico, para garantizar uniformidad, claridad y facilidad en el manejo de datos.
+                    </p>
+                    <p>
+                        Al dar clic en reglamento del aprendiz el sistema lo redirigirá a una nueva ventana que contiene el reglamento de aprendiz Sena.
+                    </p>
+
+                    <p>
+                        la herramienta de búsqueda rápida facilitara al usuario acceder de forma ágil a información específica del sistema.
+
+                        al dar clic en notificaciones se podrá visualizar las alertas de tareas pendientes que le ha enviado el sistema, la interfaz permitirá acceder a los módulos específicos clasificados por área (tic, agropecuario, ambiental, bioconstrucción, cocina y deporte).
+                    </p>
+
+                    <div class="img">
+                    <img src="/static/pantallainicio.png"alt="imagen" width="70%">
+                    </div>
+
+                <h3 class="h2">2.2.1.5 Barra de busqueda rapida o filtro</h3>
+
+                <p>
+                    Esta herramienta permitira al usuario hacer una busqueda rapida y eficaz atravez de filtros utilizando palabras o caracteres clavez segun sea la necesidad de busqueda, simplificando el proceso que se necesite.
+                </p>
+
+                <div class="img">
+
+                    <img src="/static/barra.png"alt="imagen" width="70%">
+                    </div>
+
+
+                <h3 class="h2">2.2.1.6 Modulo de horarios</h3>
+
+                <p>
+                    El sistema Permitirá a los diferentes roles consultar sus horarios asignados de clases, prácticas o talleres de forma clara y accesible, Proveer a los operarios acceso rápido y directo a sus turnos o actividades programadas, con opciones para confirmar asistencia o notificar inconvenientes.
+                </p>
+
+            
+                <h3 class="h2">2.2.1.7 Modulo de gestion de horarios</h3>
+
+                <p>
+                    Creación, modificación y eliminación de usuarios (estudiantes, profesores, administradores).Asignación de roles y permisos a cada usuario.Gestión de contraseñas y autenticación.
+                 </p> 
+
+                <h3 class="h2">2.2.1.8 Modulo de generacion de horarios </h3>
+
+                <p>
+                    Algoritmos para generar horarios automáticamente, considerando restricciones como disponibilidad de aulas, profesores y estudiantes.Opciones de generación manual para casos especiales.Visualización previa de los horarios generados antes de su publicación.
+
+                </p>
+
+
+                <h3 class="h2">2.2.1.9 Modulo consulta de horarios </h3>
+
+                <p>
+                    Consulta de horarios por parte de estudiantes, profesores y administradores.Visualización de horarios en diferentes formatos (calendario, lista, etc.).Posibilidad de exportar horarios a diferentes formatos (PDF, Excel, etc.).
+
+                </p>
+
+                <h3 class="h2">2.2.1.10 Modulo de solicitud de cambios </h3>
+
+                <p>
+                    Permitir a los estudiantes solicitar cambios en sus horarios.
+                    Flujo de aprobación de solicitudes por parte de los administradores.Notificación a los usuarios sobre el estado de sus solicitudes
+
+                </p>
+
+                <h3 class="h2">2.2.1.11 Modulo de reportes </h3>
+
+                <p> 
+
+                    Generación de reportes personalizados sobre diversos aspectos de la gestión de horarios (ocupación de aulas, carga docente, conflictos de horarios). 
+                    <p>
+                        Exportación de reportes a diferentes formatos.
+
+                    </p>
+
+                </p>
+
+                <div class="img">
+                    <img src="/static/horarios.png"alt="imagen" width="70%">
+                </div>
+
+
+                <h3 class="h2">2.2.1.12 Modulo de Asistencias </h3>
+
+                <p>
+                    Este sistema soporta funciones como gestión de usuarios, creación de horarios, registro de asistencia y generación de reportes detallados. 
+                </p>
+
+                <h3 class="h2">2.2.1.13 Registro de asistencias</h3>
+
+                <p>
+                    Permite a los instructores crear y activar registros de asistencia para los grupos asociados. Incluye validaciones como evitar registros duplicados y asegurar que las horas sean coherentes.
+                </p>
+
+                <h3 class="h2">2.2.1.14 Generacion de reportes</h3>
+
+                <p>
+                    Ofrece a los usuarios la opción de generar reportes detallados de asistencia, cursos y horarios, exportables en formatos Excel.
+                </p>
+
+                <div class="img">
+                    <img src="/static/asistencia.png"alt="imagen" width="70%">
+                </div>
+
+
+
+                 <h3 class="h2">2.2.1.15 Modulo de elementos </h3>
+
+                <p>
+                    En la interfaz principal se podrá ver los programas de formación clasificados por áreas donde podrá acceder por clics, dentro de esta se encontrarán carpetas nombradas por titulado y ficha de caracterización de acuerdo al área que pertenece, donde se encontrara información de los aprendices que se encuentran en etapa productiva.
+                </p>
+
+                <div class="img">
+                <img src="/static/etap.png"alt="imagen" width="70%">
+                </div>
+
+            <h3 class="h2">2.2.1.6 Modulo de carpetas por titulado</h3>
+
+            <p>
+                El sistema permitirá al usuario acceder a la a carpeta de titulado donde se desplegará una tabla de datos que almacena la información de etapa lectiva y productiva, como también se mostrara información personal, el sistema mostrará un icono al lado derecho que le permitirá subir evidencias como bitácoras de su proceso de etapa productiva y visualizar su estado con respecto a las bitácoras anteriormente presentadas, (el sistema no permitirá a estos roles modificar las bitácoras antes subidas ni incluir o quitar carpetas).
+            </p>
+
+            <div class="img">
+            <img src="/static/etap.png"alt="imagen" width="70%">
+            </div>
+
+            <h3 class="h2">2.2.1.7 Seguimiento </h3>
+
+            <p>
+                La carpeta de seguimiento del aprendiz, almacenara una tabla con la información de los resultados, evidencias de etapa productiva como su respectiva confirmación de las evidencias enviadas.
+            </p>
+
+            <div class="img">
+                <img src="/static/tablas.png"alt="imagen" width="70%">
+            </div>
+
+                <h3 class="h2"> 2.2.1.8 Notificaciones</h3>
+
+            <p>
+                el sistema enviara notificaciones de alerta directamente al correo de los usuarios finales, incluso si no está utilizando el software, también como notificaciones internas mostrando dentro de la aplicación como un icono de campana con un nuevo mensaje en color rojo.
+            </p>
+
+    <div class="videoportada">
+        <video src="/static/etapapr.mp4" width="630" height="630"autoplay muted controls></video>
+    </div>
+
+    <div>
+        <a href="index.html"> <button>regresar</button></a>
+    </div>
+
+
+</body>
+
+    <footer>
+        <table class="footer" >
+            <tr>
+                <th>SERVICIO NACIONAL DE APRENDIZAJE SENA</th>
+                <td rowspan="7"><img src="/static/images.png" alt=""></td>
+            </tr>
+            
+            <tr>
+                <th>DIRECCION GENERAL</th>
+            </tr>
+        
+            <tr>
+                <td>Calle 57 No. 8-69 Bogota D.C (Cundinamarca), Colombia</td>
+            </tr>
+            <tr>
+                <td>El SENA brinda a la ciudadania, atencion presencial a las 33 regiones y 117 centros de
+                formacion.</td>
+            </tr>
+            <tr>
+                <td>Lineas de atencion al ciudadanos, empresarios y linea PQRS:</td>
+            </tr>
+            <td>Bogota +(57)601 763 60 60- Linea gratuita gratuita y rsto del pais 018000 910270</td>
+            <tr>
+                <td>&nbsp</td>    
+            </tr>
+        </table>
+    </footer>
+
+
+</html>

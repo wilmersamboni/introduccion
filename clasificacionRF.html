@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requerimientos</title>
+    <link rel="stylesheet" href="css/cabeza.css">
+</head>
+<body>
+    
+    <table class="spec-table">
+        <tr>
+            <td rowspan="4" class="logo">
+                <img style="width: 110px;"src="/static/images.png" alt="Logo SENA">
+                
+            </td>
+            <th>Ficha:</th>
+            
+            <th colspan="2">Proyecto:</th>
+           
+        </tr>
+        <tr>
+            <td>3063290</td>
+            <td colspan="2">EPSAS</td>
+        </tr>
+        <tr>
+            <th>Fecha:</th>
+            <th>version:</th>
+            <th>codigo:</th>
+        </tr>
+        <tr>
+            <td>24/12/02</td>
+            <td>2.0</td>
+            <td>0325</td>
+        </tr>
+    
+</table>
+
+    <h1 class="h1">3.1.1 Clasificacion de requerimientos funcionales</h1>
+    <table class="spec-table2">
+        <tr>
+            <th>ID  del requerimiento.</th>
+            <td>RF01.</td>
+            
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Registro de usuario.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>el sistema permitirá validar los datos ingresados (nombre completo documento de identidad, contraseña complejidad de la contraseña y unicidad del nombre) si estos datos son válidos, el sistema permitirá guardar el usuario en la base de datos, el sistema también enviara un correo de confirmación o activación, si hay errores en la validación mostrara un mensaje claro al usuario como “el correo ya están en uso” o las contraseñas no coinciden y permitirá corregir los datos ingresados con anterioridad.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr> 
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID  del requerimiento.</th>
+            <td>RF02.</td>
+            
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Permisos de menu.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema le permitirá al administrador poder dar permisos de acuerdo al rol del usuario que se va a registrar.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr> 
+    </table>
+    <table class="spec-table2">
+            <tr>
+                <th>ID  del requerimiento.</th>
+                <td>RF03.</td>
+                
+            </tr>
+            <tr>
+                <th>Nombre del requerimiento.</th>
+                <td>Inicio de sesion.</td>
+            </tr>
+            <tr>
+                <th>Descripcion.</th>
+                <td>El sistema permitirá a los usuarios poder iniciar sesión ingresando un correo y una contraseña previamente registrados, dándole acceso a la página principal, estos campos deben obligatoriamente diligenciados.</td>
+            </tr>
+            <tr>
+                <th>Prioridad.</th>
+                <td>Alta.</td>
+            </tr>       
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF04.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Recuperar contraseña.</td>
+        </tr>
+        <tr>
+            <th>Descripcion</th>
+            <td>El sistema permitirá poder restaurar la contraseña al usuario por medio de un correo electrónico previamente registrado al cual se le enviará un correo con código de validación, este tendrá una duración valida de 6:59 segundos para ser ingresado.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Media.</td>
+        </tr>      
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF05.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>pagina principal.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>Sistema permitirá los usuarios visualizar el logo de la aplicación en la parte superior izquierda, en la parte superior derecha se visualizará el perfil de usuario, en la parte inferior derecha de la interfaz se podrá visualizar el icono de notificaciones.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>    
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF06.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Barra de busqueda o filtro.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El módulo de búsqueda de usuarios por filtros permite a los usuarios con permisos acceder a una funcionalidad intuitiva para localizar rápidamente registros específicos. A través del submódulo "Usuarios", el usuario puede seleccionar la opción "Buscar Usuario" y utilizar filtros como número de identificación, nombre, rol (Instructor, Aprendiz, Administrador) o una combinación de ellos. Una vez aplicados los filtros y presionado el botón "Buscar", el sistema muestra los datos encontrados directamente desde la base de datos, proporcionando resultados precisos y organizados para facilitar su consulta.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>   
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF07.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Modulo de horarios.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema le permitirá al usuario poder ingresar al módulo horarios donde podrá visualizar su horario laboral de acuerdo al rol asignado.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>  
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF08.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Creacion de horarios.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitira al usuario poder crear y modificar sus horarios.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>    
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF09.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Modulo de asistencias.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá a los instructores poder marcar las asistencias de los aprendices que asisten a formación del día correspondiente.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>    
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF10.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Creacion de asistencias.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema les permitirá a los instructores y al administrador poder crear registros de asistencias.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>  
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF11.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Modulo de elementos y carpetas.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>En la página principal se podrá visualizar los programas de formación clasificados por áreas donde se pondrá acceder a ellos por medios de clics, dentro de estas se encontrarán los titulados y ficha de caracterización de acuerdo al área que pertenece.</td> 
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF12.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Modulos de carpetas  de titulados.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá acceder a las carpetas de los titulados donde se podrá encontrar una tabla de datos con información de la etapa lectiva y productiva de los aprendices al igual que información personal, verificación, evaluación y corrección de bitácoras. </td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>   
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF13.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Modulo de carpetas por fichas.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá acceder a las carpetas de los titulados donde se podrá encontrar una tabla de datos con información de la etapa lectiva y productiva de los aprendices al igual que información personal, verificación, evaluación y corrección de bitácoras. </td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>       
+    </table>
+    <table class="spec-table2">
+        <tr>
+            <th>ID del requerimiento.</th>
+            <td>RF14.</td>
+        </tr>
+        <tr>
+            <th>Nombre del requerimiento.</th>
+            <td>Tabla de seguimiento.</td>
+        </tr>
+        <tr>
+            <th>Descripcion.</th>
+            <td>El sistema permitirá visualizar una tabla con la información de los aprendices que se encuentran en etapa productiva y los resultados de seguimiento.</td>
+        </tr>
+        <tr>
+            <th>Prioridad.</th>
+            <td>Alta.</td>
+        </tr>  
+    </table>
+
+    <div>
+        <a href="index.html"> <button>regresar</button></a>
+    </div>
+        
+</body>
+<footer>
+    <table class="footer">
+        <tr>
+            <th>SERVICIO NACIONAL DE APRENDIZAJE SENA</th>
+            <td rowspan="7"><img src="/static/images.png" alt=""></td>
+        </tr>
+        
+        <tr>
+            <th>DIRECCION GENERAL</th>
+        </tr>
+    
+        <tr>
+            <td>Calle 57 No. 8-69 Bogota D.C (Cundinamarca), Colombia</td>
+        </tr>
+        <tr>
+            <td>El SENA brinda a la ciudadania, atencion presencial a las 33 regiones y 117 centros de
+              formacion.</td>
+        </tr>
+        <tr>
+            <td>Lineas de atencion al ciudadanos, empresarios y linea PQRS:</td>
+        </tr>
+        <td>Bogota +(57)601 763 60 60- Linea gratuita gratuita y rsto del pais 018000 910270</td>
+        <tr>
+            <td>&nbsp</td>    
+        </tr>
+    </table>
+</footer>
+
+</html>
